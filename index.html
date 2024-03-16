@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/mastert.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>portal</title>
+</head>
+<body>
+    <div class="home-page ">
+        <div class="side-bar  ">
+            <div class="head row">
+                <i onclick="handleSideBar()" class="fas fa-bars col  bars"></i>
+            </div>
+            <ul>
+                <div class="Row active-link"  onclick="handleHomePage()">
+                    <li class=""><a href="./index.html">Home</a></li>
+                    <li class=""><a href="./index.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                </div>
+                <div class="Row">
+                    <li class=""><a>Settings</a></li>
+                    <li class=""><i class="fa fa-gear"></i></li>
+                </div>
+                <div class="Row">
+                    <li class=""><a>Uesr</a></li>
+                    <li class=""><i class="fas fa-users" style="font-size: 18px;"></i></li>
+                </div>
+                <div class="Row"  onclick="handleSearchPage()">
+                    <li class=""><a href="./search.html">Search</a></li>
+                    <li class=""><a href="./search.html"><i class="fa fa-search"></i></a></li>
+                </div>
+            </ul>
+        </div>
+        <div class="container ">
+            <div class="search">
+                <input type="text" placeholder="Search..." />
+                <i class="fas fa-truck-fast" style="font-size: 40px;"></i>
+                <button>search</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./scrept.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
