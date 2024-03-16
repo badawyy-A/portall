@@ -111,9 +111,7 @@ margin-right: auto;
 .side-bar ul .active-link{
     background-color: var(--second-color);
 }
-.side-bar ul .Row:hover{
-    background-color: var(--second-color);
-}
+
 .side-bar ul .Row a{
     color: var(--text-color);
     
@@ -127,9 +125,7 @@ margin-right: auto;
     transition: 0.15s ease;
 }
 
-.side-bar ul .Row li i:hover{
-    transform: scale(1.2);
-}
+
 .home-page .container{
     display: flex;
     justify-content: center;
@@ -243,21 +239,13 @@ margin-right: auto;
     cursor: pointer;
     color: #007bff;
   }
-  .search-page .container ul li:hover{
-    background-color: rgb(226, 224, 224);
-  }
+
   .search-page .container ul .active{
     background-color: #007bff;
     color: var(--text-color);
     border: none;
   }
-  .search-page .container ul .active:hover{
-    background-color: #007bff;
-    color: var(--text-color);
-  }
-  .search-page .container ul .prev:hover{
-    background-color: var(--text-color);
-  }
+
   .search-page .container ul .prev{
     color: var(--main-color);
   }
