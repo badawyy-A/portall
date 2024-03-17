@@ -19,6 +19,11 @@
 </head>
 <body>
     <div class="search-page">
+        <nav>
+            <div class="sign">
+                <a class="login" href="./loginPage.html">Login</a>
+            </div>
+        </nav>
         <div class="side-bar  ">
             <div class="head row">
                 <i onclick=" handleSideBar()" class="fas fa-bars col bars"></i>
@@ -64,25 +69,115 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="active-t" data-toggle="details-sidebar">
-                        <td>John</td>
-                        <td>Doe</td>
-                        <td>john.doe@example.com</td>
-                        <td>123 Main St, Anytown USA</td>
-                        <td>555-1234</td>
-                        <td>New York, NY</td>
-                        <td>1990-05-15</td>
-                        <td>2022-03-21</td>
+                        <tr data-toggle="details-sidebar">
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>john.doe@example.com</td>
+                            <td>123 Main St, Anytown USA</td>
+                            <td>555-1234</td>
+                            <td>New York, NY</td>
+                            <td>1990-05-15</td>
+                            <td>2022-03-21</td>
                         </tr>
                         <tr data-toggle="details-sidebar">
-                        <td>Jane</td>
-                        <td>Smith</td>
-                        <td>jane.smith@example.com</td>
-                        <td>456 Oak Ave, Someville CA</td>
-                        <td>555-5678</td>
-                        <td>Los Angeles, CA</td>
-                        <td>1985-09-22</td>
-                        <td>2021-11-03</td>
+                            <td>Jane</td>
+                            <td>Smith</td>
+                            <td>jane.smith@example.com</td>
+                            <td>456 Oak Ave, Someville CA</td>
+                            <td>555-5678</td>
+                            <td>Los Angeles, CA</td>
+                            <td>1985-09-22</td>
+                            <td>2021-11-03</td>
+                        </tr>
+                        <tr data-toggle="details-sidebar">
+                            <td>Jane</td>
+                            <td>Smith</td>
+                            <td>jane.smith@example.com</td>
+                            <td>456 Oak Ave, Someville CA</td>
+                            <td>555-5678</td>
+                            <td>Los Angeles, CA</td>
+                            <td>1985-09-22</td>
+                            <td>2021-11-03</td>
+                        </tr>
+                        <tr data-toggle="details-sidebar">
+                            <td>Jane</td>
+                            <td>Smith</td>
+                            <td>jane.smith@example.com</td>
+                            <td>456 Oak Ave, Someville CA</td>
+                            <td>555-5678</td>
+                            <td>Los Angeles, CA</td>
+                            <td>1985-09-22</td>
+                            <td>2021-11-03</td>
+                        </tr>
+                        <tr data-toggle="details-sidebar">
+                            <td>Jane</td>
+                            <td>Smith</td>
+                            <td>jane.smith@example.com</td>
+                            <td>456 Oak Ave, Someville CA</td>
+                            <td>555-5678</td>
+                            <td>Los Angeles, CA</td>
+                            <td>1985-09-22</td>
+                            <td>2021-11-03</td>
+                        </tr>
+                        <tr data-toggle="details-sidebar">
+                            <td>Jane</td>
+                            <td>Smith</td>
+                            <td>jane.smith@example.com</td>
+                            <td>456 Oak Ave, Someville CA</td>
+                            <td>555-5678</td>
+                            <td>Los Angeles, CA</td>
+                            <td>1985-09-22</td>
+                            <td>2021-11-03</td>
+                        </tr>
+                        <tr data-toggle="details-sidebar">
+                            <td>Jane</td>
+                            <td>Smith</td>
+                            <td>jane.smith@example.com</td>
+                            <td>456 Oak Ave, Someville CA</td>
+                            <td>555-5678</td>
+                            <td>Los Angeles, CA</td>
+                            <td>1985-09-22</td>
+                            <td>2021-11-03</td>
+                        </tr>
+                        <tr data-toggle="details-sidebar">
+                            <td>Jane</td>
+                            <td>Smith</td>
+                            <td>jane.smith@example.com</td>
+                            <td>456 Oak Ave, Someville CA</td>
+                            <td>555-5678</td>
+                            <td>Los Angeles, CA</td>
+                            <td>1985-09-22</td>
+                            <td>2021-11-03</td>
+                        </tr>
+                        <tr data-toggle="details-sidebar">
+                            <td>Jane</td>
+                            <td>Smith</td>
+                            <td>jane.smith@example.com</td>
+                            <td>456 Oak Ave, Someville CA</td>
+                            <td>555-5678</td>
+                            <td>Los Angeles, CA</td>
+                            <td>1985-09-22</td>
+                            <td>2021-11-03</td>
+                        </tr>
+                        <tr data-toggle="details-sidebar">
+                            <td>Jane</td>
+                            <td>Smith</td>
+                            <td>jane.smith@example.com</td>
+                            <td>456 Oak Ave, Someville CA</td>
+                            <td>555-5678</td>
+                            <td>Los Angeles, CA</td>
+                            <td>1985-09-22</td>
+                            <td>2021-11-03</td>
+                        </tr>
+                        <tr data-toggle="details-sidebar">
+                            <td>Jane</td>
+                            <td>Smith</td>
+                            <td>jane.smith@example.com</td>
+                            <td>456 Oak Ave, Someville CA</td>
+                            <td>555-5678</td>
+                            <td>Los Angeles, CA</td>
+                            <td>1985-09-22</td>
+                            <td>2021-11-03</td>
                         </tr>
                     </tbody>
                 </table>
@@ -100,19 +195,20 @@
 
     </div> 
     <div class=" " id="right-side" onclick="handelRightSide()">
-        <div class="details-sidebar ">
-            <h5>Details</h5>
-            <p><strong>First Name:</strong> <span id="first-name"></span></p>
-            <p><strong>Last Name:</strong> <span id="last-name"></span></p>
-            <p><strong>Email:</strong> <span id="email"></span></p>
-            <p><strong>Address:</strong> <span id="address"></span></p>
-            <p><strong>Phone:</strong> <span id="phone"></span></p>
-            <p><strong>Location:</strong> <span id="location"></span></p>
-            <p><strong>Date of Birth:</strong> <span id="date-of-birth"></span></p>
-            <p><strong>Creation Date:</strong> <span id="creation-date"></span></p>
-          </div>
+
     </div>
-    <script src="./scrept.js">
+    <div class="details-sidebar ">
+        <h5>Details</h5>
+        <p><strong>First Name:</strong> <span id="first-name"></span></p>
+        <p><strong>Last Name:</strong> <span id="last-name"></span></p>
+        <p><strong>Email:</strong> <span id="email"></span></p>
+        <p><strong>Address:</strong> <span id="address"></span></p>
+        <p><strong>Phone:</strong> <span id="phone"></span></p>
+        <p><strong>Location:</strong> <span id="location"></span></p>
+        <p><strong>Date of Birth:</strong> <span id="date-of-birth"></span></p>
+        <p><strong>Creation Date:</strong> <span id="creation-date"></span></p>
+      </div>
+    <script src="./script.js">
 
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
