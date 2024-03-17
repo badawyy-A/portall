@@ -16,10 +16,10 @@ function handleSideBar (){
 }
 
 function handleSearchPage(){
-    window.location.pathname = "/search.html"
+    window.location.pathname = "/portall/search.html"
 }
 function handleHomePage(){
-    window.location.pathname = "/index.html"
+    window.location.pathname = "/portall/index.html"
 }
 
 document.querySelectorAll('[data-toggle="details-sidebar"]').forEach(function(element) {
