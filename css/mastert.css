@@ -64,22 +64,32 @@ margin-right: auto;
 }
 
 /* home page */
-.home-page,.search-page{
+.home-page{
     display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.search-page{
+    display: flex;
+    flex-direction: column;
 }
 .side-bar {
- background-color: var(--main-color);
- height: 100vh;
- color: var(--text-color);
- margin-left: -350px;
- padding: 0;
- transition: 1s ease;
- width: 400px;
- z-index: 777;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--main-color);
+    height: 100vh;
+    color: var(--text-color);
+    margin-left: -350px;
+    padding: 0;
+    transition: 1s ease;
+    width: 400px;
+    z-index: 777;
 }
 .active-side{
     margin-left: 0;
 }
+
 .side-bar  .head{
     display: flex;
     width: 100%;
@@ -93,6 +103,37 @@ margin-right: auto;
     cursor: pointer;
     padding: 0;
 }
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    height: 80px;
+    margin-bottom: 20px;
+}
+nav .sign{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 60px;
+    transition: 0.3s ease;
+    padding-top: 20px;
+}
+
+nav .sign .login{
+    background-color: var(--second-color);
+    color: var(--text-color);
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 60px;
+    margin-right: 20px;
+    
+}
+
+
 .side-bar ul {
     display: flex;
     flex-direction: column;
@@ -130,6 +171,8 @@ margin-right: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    padding-left: 50px; 
 }
 .home-page .container input{
     border: 1px solid rgb(190, 187, 187);
@@ -153,7 +196,7 @@ margin-right: auto;
 }
 @media (max-width: 768px){
     .side-bar {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: -350px;
         margin-left: 0px;
@@ -163,10 +206,11 @@ margin-right: auto;
            left: 0;
            width: 100%;
        }
-       .home-page .container {
-        height: 100vh;
-        padding-left: 50px;     
+       .home-page .container{
+        align-items: flex-start;
+        padding-top: 30px;
        }
+
 }
 @media (max-width: 468px){
 .home-page .container input{
@@ -257,7 +301,6 @@ margin-right: auto;
 .right-side{
     width: 100%;
     height: 100%;
-    
 }
   .details-sidebar {
     background-color: var(--main-color);
@@ -268,12 +311,8 @@ margin-right: auto;
     right: -300px;
     top: 0;
     width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     transition: 1s ease;
     z-index: 999;
-    pointer-events: none;
   }
   .details-sidebar.show {
     right: 0;
@@ -285,7 +324,7 @@ margin-right: auto;
     top: 0%;
     left: 0% ;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: rgba(41, 41, 41, 0.61);
     z-index: 888;
     backdrop-filter: blur(5px);
@@ -317,7 +356,74 @@ margin-right: auto;
 
   }
 
+/* login page */
+
+.login-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.login-page form{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.login-page form h2{
+    color: var(--main-color);
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+.login-page form .label{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-page form .label input{
+    width: 100%;
+    padding-left: 30px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid var(--main-color);
+    border-radius: 6px;
+}
+.login-page form .label i {
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    
+}
+
+.login-page form .submit{
+    background-color: var(--second-color);
+    color: var(--text-color);
+    font-size: 14px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+}
+
+.login-page form .submit:hover{
+    background-color: #0b64c4;
+}
+@media (max-width: 568px){
+    .login-page {
+        justify-content: flex-start;
+    }
+    .login-page form{
+        width: 80%;
+        padding-left: 50px;
+        padding-top: 120px;
+    }
+}
+
   @media (min-width: 768px){
+
     .side-bar ul .Row:hover{
         background-color: var(--second-color);
     }
@@ -334,4 +440,8 @@ margin-right: auto;
       .search-page .container ul .prev:hover{
         background-color: var(--text-color);
       }
+      nav .sign .login:hover{
+        background-color: #0b64c4;
+        
+    }
   }
